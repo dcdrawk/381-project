@@ -1,0 +1,81 @@
+/* grids.css; defining grids for my site */
+
+[class*='col-'] {
+	float: left;
+	padding: 0;
+	text-align: center;
+}
+ 
+.grid:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.col-1of1{
+	width:100%;
+	text-align: left;
+}
+
+.col-1of2 {
+	width: 50%;
+	text-align: left;
+}
+
+.col-1of3 {
+	width: 33.333%;
+	text-align: left;
+}
+
+.col-1of4{
+	width: 25%;
+	text-align: left;
+}
+
+.col-3of4{
+	width: 75%;
+	text-align: left;
+}
+
+.col-1of5{
+	width:20%;
+}
+
+.col-1of6{
+	width:16.666%;
+}
+
+
+.col-1of8{
+	width:12.5%;
+	text-align: left;
+}
+
+.col-7of8{
+	width:87.5%;
+	text-align: left;
+}
+
+/* This part removes a pesky blue underline on the product thumbnails */
+.col-1of2 a {
+	text-decoration: none;
+}
+.col-2of3 {
+	text-align: left;
+	width: 66.666%;
+}
+.col-1of12{
+	width: 8.333%;
+	text-align:left;
+}
+
+
+@media (max-width:1366px) {
+
+}

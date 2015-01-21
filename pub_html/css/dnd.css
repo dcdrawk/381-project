@@ -1,0 +1,338 @@
+/* -- GLOBAL STYLES -- */
+
+/* global box-sizing */
+*, *:after, *:before {
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+
+.clear:before, .clear:after {
+    content:' ';
+    display:table;
+}
+
+html, body {margin:0;padding:0;height:100%;}
+
+html {
+	font-size:100%;
+}
+
+body{
+	padding: 0px;
+	margin: 0;
+	background:url('../img/paper/paper.jpg');
+	font-family: 'Source Sans Pro', sans-serif;
+	background-attachment: fixed;
+}
+
+a{
+	text-decoration:none;
+}
+
+.wrapper {
+	width:100%;
+	padding:0 5%;
+	position:relative;
+	display: inline-block;
+}
+
+h1{
+	font-family: 'Lato', sans-serif;
+	font-size:2em;
+	color:#000;
+}
+
+h2, h3, p{
+	color:#000;
+	font-family: 'Source Sans Pro', sans-serif;
+	margin:.5em 0;
+}
+
+h3{
+	font-size:1.3em;
+	font-weight:400;
+}
+
+input, select{
+	font-size:1.5em;
+	padding:.25em!important;
+	max-width:100%;
+	background-color: rgba(255, 255, 255, 0.4);
+	border: 1px solid rgba(126, 126, 126, 0.7);
+	width:100%;
+	height: 2em;
+}
+
+i{
+	padding:.5em;
+	text-shadow:1px 1px 1px #555;
+}
+
+section{
+	margin:.5em 0;
+}
+
+#basic-info div, #stats div{
+	display:inline-block;
+	max-width:100%;
+	padding: 0 .25em;
+	vertical-align: top;
+}
+
+#calcLevel{
+	padding:.5em;
+	font-size:1.5em;
+	line-height:1em;
+}
+
+#stats input, #stats .abilityMod, #stats h3{
+	text-align:center;
+}
+
+#stats input{
+	font-size:1.25em;
+}
+
+.stats{
+	margin-bottom:1em;
+}
+
+#stats .abilityMod, #proficiency h3{
+	font-size:1.5em;
+	text-align:center;
+}
+
+.stats h3, #proficiency h3, #traits h3{
+	margin:.25em 0 0 0;
+	line-height: 1em;
+}
+
+#proficiencyBns h3{
+	display:inline;
+}
+
+.prof{
+	margin:0 0 .5em 0;
+}
+
+#proficiency h3, #traits h3{
+	text-align:left;
+	font-size:1em;
+	line-height: 1.5em;
+}
+
+#skillList h3{
+	font-size:1em;
+	width:100%;
+}
+
+#skillList h3{
+	display:inline;
+}
+
+.skill{
+	width:100%;
+}
+
+.skillValue{
+	width:2em;
+	font-size:1em;
+	text-align:center;
+	margin:.25em;
+	vertical-align: top;
+	border-radius: .2em;
+}
+
+.skillUp{
+	display:inline;
+	width: 1em;
+	height: 1em;
+	margin: .25em;
+	vertical-align: middle;
+}
+
+#combatStats h3, #combatStats input{
+	margin:0;
+	padding:.5em;
+	text-align:center;
+}
+
+.health{
+	padding:.5em;
+}
+
+.dynamicStat{
+	display: inline-block;
+	border: 1px solid #909090;
+	background: rgba(105, 105, 105, 0.16);
+	text-align: center;
+	margin:0!important;
+}
+
+#combatStats div{
+	margin: .5em 0;
+}
+
+
+.saves h3, .saves input{
+	display:inline;
+	vertical-align:middle;
+}
+
+.saves input{
+	padding:1em;
+	width:1em;
+}
+
+#hitDice{
+	display: table;
+	margin: auto!important;
+}
+
+#hitDice h3{
+	font-weight:900;
+}
+
+#weaponList select{
+	margin-bottom:.5em;
+}
+
+#addWeap i{
+	padding:0;
+	margin-right:.5em;
+}
+
+#addWeap h3{
+	cursor:pointer;
+	display: inline-block;
+	clear:both;
+	text-align: center;
+	padding: .5em;
+	border: 1px solid #555;
+	background: #2A9BBD;
+	color: #fff;
+	box-shadow: 1px 1px 2px #000;
+	width: 33%;
+	margin-left:2.5em;
+}
+
+#weaponSelect{
+	height: auto;
+}
+
+.typeRow{
+	margin-bottom:.5em;
+}
+.weaponType{
+	margin-right:.5em;
+}
+.addBtn{
+	display:none;
+	padding:.25em!important;
+	font-size:1.5em;
+	margin-left:.5em;
+	cursor:pointer;
+}
+
+.addBtn i{
+	padding:0;
+	color: #4BAD08;
+	font-size:1.4em;
+}
+
+.addBtn h3{
+	margin:0;
+}
+
+.removeBtn{
+	display:inline-block;
+	float:left;
+	margin-right:.5em;
+	cursor:pointer;
+}
+
+.removeBtn i{
+	color: #E83B3B;
+	font-size:1.5em;
+}
+
+#weaponList h3{
+	margin:0.5em 0 .9em 0;	
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+     margin: 0; 
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+/* -- /GLOBAL STYLES --*/
+
+@media only screen and (max-width:1300px) {
+	#skillList .col-1of4, #combatStats .col-1of3{
+		width:50%;
+	}
+	
+	 #combatStats .col-1of6{
+		width:25%;
+	}
+	
+}
+
+@media only screen and (max-width:950px) {
+	#alignment{
+		width:50%;
+	}
+}
+
+@media only screen and (max-width:750px) {
+	#skillList .col-1of4, #combatStats .col-1of3{
+		width:100%;
+	}
+	
+	 #combatStats .col-1of6{
+		width:50%;
+	}
+}
+
+@media only screen and (max-width:700px) {
+	#skillList .col-1of4{
+		width:100%;
+	}
+@media only screen and (max-width:650px) {
+	.col-1of4{
+		width:50%;
+	}
+	.col-1of8{
+		width:50%;
+	}
+	#stats{
+		width:100%;
+	}
+}
+
+@media only screen and (max-width:500px) {
+	#nameField, #race, #subrace, #class{
+		width:100%;
+	}
+	
+	#background, #alignment, #selectAlignment{
+		width:100%;
+	}
+	
+	#stats, #proficiency{
+		width:100%;
+	}
+	
+	#proficiency > .col-1of4, #skillList > .col-1of2, #proficiency > .col-3of4{
+		width:100%;
+	}
+	
+	
+}
